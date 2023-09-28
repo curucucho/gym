@@ -1,0 +1,476 @@
+/* Ezequiel Nieto Mazzuco*/
+/* Ivan ceballos*/
+
+/* Parametros Generales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* Hacer pagina a una resolucion de 1366x768 */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  body {
+    flex-direction: column;
+  }
+  main {
+    flex-direction: column;
+  }
+  aside {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+/* APARTADO DE ENCABEZADO Y MENU */
+.apartado-header {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(75, 75, 75);
+  z-index: 99;
+  opacity: 0.8;
+}
+
+/* HEADER DEL MENU (AJUSTAR PADDING SEGUN LA RESOLUCION) */
+/* HEADER DEL MENU (JUSTIFY CONTECT AJUSTA LA DISTANCIA) */
+
+.apartado-header header {
+  max-width: 1100px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+/* APARTADO DEL COLOR DEL TEXTO (BARRA DE HEADER) */
+
+.txtRojo {
+  color: red;
+}
+
+.txtblanco {
+  color: white;
+}
+
+.sabermas {
+  padding-bottom: 10px;
+}
+
+/* APARTADO DE LA BARRA (LETRAS) */
+
+.apartado-header header nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+/* APARTADO DE LAS REDES (CON HOVER) */
+
+/* COLOR HOVER */
+
+.apartado-header header nav a:hover {
+  color: orange;
+
+  /* DECORACION DE LOS LOGOS DE REDES */
+}
+.apartado-header header .redes a {
+  text-decoration: none;
+  color: red;
+  padding: 10px;
+}
+
+/* APARTADO DE CUERPO*/
+
+.inicio {
+  background-image: url(../img/Athlete-With-Dumbbells-In-Gym-1920x1200.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  position: relative;
+}
+
+/* TEXTO EN MEDIO (POSICION DEL TEXTO)*/
+
+.inicio .info {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* MODIFICACION DE LAS LETRAS */
+
+.inicio .info h2 {
+  font-size: 5rem;
+  letter-spacing: 10px;
+}
+
+/* APARTADO DE LAS LETRAS MAS PEQUEÑAS (HEADER) */
+
+.inicio .info p {
+  margin: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* APARTADO GALERIA*/
+
+.galeria {
+  background-image: url(../img/IMAGENGALERIA2.jpg);
+  padding-top: 100px;
+  color: white;
+}
+
+/* ORGANIZACION DE LAS IMAGENES (GALERIA) */
+
+.galeria .contenidototal {
+  margin: auto;
+  padding-bottom: 100px;
+  max-width: 1000px;
+}
+
+/* CENTRADO DE LA GALERIA */
+
+.galeria .contenidotitulo {
+  margin-bottom: 40px;
+  display: flex;
+
+  /* TEXTO PRINCIPAL DE LA GALERIA*/
+}
+.galeria .contenidotitulo .informacion {
+  margin-left: 30px;
+}
+
+/* COLOR DE LA FRASE (GALERIA) */
+
+.galeria .contenidotitulo .informacion .frase {
+  color: red;
+  font-size: 3rem;
+}
+
+/* TAMAÑO DE LA LETRA (GALERIA)*/
+
+.galeria .contenidotitulo .informacion h2 {
+  font-size: 2rem;
+}
+
+/* IMAGENES DE LA GALERIA (F=FILA---C=COLUMNA)*/
+
+.galeria .f {
+  display: flex;
+}
+.galeria .f .c img {
+  width: 100%;
+  display: block;
+}
+
+/* CUADRO DE IMAGENES (GALERIA)*/
+
+.contenidototal img {
+  border: 2px solid white;
+}
+
+/* ACTIVIDADES */
+
+/* FONDO DE COMBOS */
+
+.combos {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+  margin-left: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(138, 138, 138);
+  border-radius: 20px;
+}
+
+/* APARTADO DE TITULO COMBOS*/
+
+.combos .titulo {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  margin: auto;
+}
+
+.combos {
+  align-items: center;
+  padding-right: 150px;
+}
+
+.fila {
+  padding-left: 150px;
+}
+/* FRASE COMBOS */
+
+.combos .titulo .info .frase {
+  color: red;
+  font-size: 2rem;
+}
+
+/* APARTADO DE DIV (FILA)*/
+
+.combos .fila {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* TAMAÑO DE LA INFO DE PLANES*/
+
+.combos .fila .col {
+  width: 25%;
+}
+
+/* APARTADO DE LA IMAGEN (COMBOS)*/
+
+.combos .fila .col img {
+  height: 220px;
+  padding-bottom: 15px;
+  margin-left: 6;
+  position: static;
+
+  /* APARTADO DE LETRAS DE (COMBOS)*/
+}
+.combos .fila .info {
+  border: 2px solid white;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(49, 46, 46);
+  color: white;
+  border-radius: 20px;
+}
+
+/* ESPACIADO DEL APARTADO DE (COMBOS) */
+
+.combos .fila .info p {
+  margin: 15px 0;
+}
+
+/* APARTADO LETRA DE CONTACTANOS (COMBOS)*/
+
+.combos .fila .info a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+}
+
+/* APARTADO DE PLANES */
+
+.txtgris {
+  color: white;
+  text-decoration: line-through;
+}
+
+/* APARTADO DE PRECIO DE PLANES */
+
+.precioplan {
+  font-weight: 900;
+  font-size: xx-large;
+  color: black;
+}
+
+/* APARTADO DE SABER MAS (COMBOS INICIO)*/
+
+.sabermas:hover {
+  background-color: rgb(54, 55, 61);
+  transition: 0.8s;
+  filter: opacity(0.1);
+}
+
+/* APARTADO DE CONTACTO */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px;
+  /* background-color: #fff; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #70737a;
+}
+
+/* FORMULARIO  */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* FUENTE DEL FORMULARIO  */
+
+label {
+  font-weight: bold;
+}
+
+/*  APARTADO DE LOS CAMPOS (FORMULARIO) */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+textarea:hover,
+select:hover {
+  border-color: #007bff;
+  background-color: grey;
+}
+
+/* APARTADO DE BOTON (FORMULARIO) */
+
+button[type="btnenviar"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* EFECTOS DEL BOTON (FORMULARIO)  */
+
+button[type="btnenviar"]:hover {
+  background-color: #0056b3;
+}
+
+/* Aside */
+.aside1 {
+  background-color: #a9a9a9;
+  position: absolute;
+  right: 5px;
+  top: 820px;
+  padding: 100px 80px;
+  margin-bottom: 10px;
+  border-style: double;
+}
+
+.aside2 {
+  background-color: #a9a9a9;
+  position: absolute;
+  right: 5px;
+  top: 1020px;
+  padding: 100px 80px;
+  border-style: double;
+}
+.aside3 {
+  background-color: #a9a9a9;
+  position: absolute;
+  right: 5px;
+  top: 1220px;
+  padding: 100px 80px;
+  border-style: double;
+}
+/* Hr */
+hr {
+  background-color: grey;
+  height: 7px;
+  width: auto;
+  margin-top: 50px;
+}
+/* Apartado info dueño Gym */
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Una columna para la imagen y dos para el contenido */
+  gap: 20px; /* Espacio entre columnas */
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #31353d;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/*  APARTADO DE TIPOGRAFIA DEL FOOTER */
+
+h4 {
+  color: white;
+  margin-bottom: 25px;
+  margin-top: 8%;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/*  DIRECCION DEL FOOTER */
+
+.div_direccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  APARTADO DIV (FOOTER) */
+
+.div_horarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  INFORMACION DEL FOOTER */
+
+.horarios {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.horarios p {
+  margin: 0;
+  padding: 0;
+}
+.mail {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+}
